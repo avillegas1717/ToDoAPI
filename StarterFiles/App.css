@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Train+One&display=swap');
+
+/* #region Style Guide */
+/* 
+font-family: 'Comfortaa', cursive;
+font-family: 'Train One', cursive;
+*/
+/* #endregion */
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: none;
+}
+
+html {
+    background-color: rgb(100, 100, 100);
+}
+
+body {
+    font-size: 20px;
+    max-width: 1600px;
+    margin: 0 auto !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Comfortaa', cursive !important;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    position: relative;
+    background: linear-gradient(to right, rgb(241, 52, 84), rgb(247, 130, 20));
+
+}
+
+button {
+    font-family: 'Comfortaa', cursive;
+}
+
+button.navbar-brand {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    transition: .5s ease;
+    font-family: 'Train One', cursive;
+}
+
+button.navbar-brand img {
+    width: 2em;
+    margin-left: 7px;
+    animation: App-logo-spin 18s infinite linear;
+}
+
+a.navbar-brand:hover {
+    text-decoration: none;
+
+}
+
+
+nav div.hamburger-outer {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 2.25em;
+    width: 2.25em;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+nav div.hamburger-outer:hover {
+    cursor:crosshair;
+}
+
+nav div.hamburger-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: .25em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+nav div.hamburger-inner:nth-child(2) {
+    position: absolute;
+    top: .75em;
+    height: .25em;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+nav div.hamburger-inner:last-child {
+    position: absolute;
+    top: 1.5em;
+    height: .25em;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+div.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: linear-gradient(to top, rgb(241, 52, 84), rgb(247, 130, 20));
+    z-index: 1000;
+    padding: 2em;
+    font-family: 'Train One', cursive;
+    transition: 150ms;
+}
+
+
+button.close-menu {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 3em;
+    color: white;
+    transition: 2s ease;
+}
+
+
+button.close-menu:hover,
+div.menu ul li:hover,
+a.navbar-brand:hover {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    cursor: crosshair;
+
+}
+
+div.menu ul li:hover {
+    letter-spacing: 3px;
+}
+
+div.menu ul {
+    text-align: center;
+    list-style: none;
+    margin-top: 3em;
+}
+
+div.menu ul li {
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 1.5em;
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    transition: .5s ease;
+}
+
+nav a img {
+    width: 50px;
+    margin: 0 5px;
+}
+ 
+section.home,
+section.components,
+section.props,
+section.resources,
+section.terms,
+section.tech {
+    padding-top: 5.5em;
+} 
+
+
+
+
+.banner h2 {
+    text-align: center;
+    padding: .25em 1.5em;
+    width: 50%;
+    margin-left: 25%;
+    position: relative;
+    bottom: 1.5em;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size: 2.5em;
+
+}
+
+article.banner {
+    overflow: hidden;
+}
+
+section.home article.banner img {
+    width: 100%;
+}
+
+a.btn-color,
+button.btn-color {
+    background-color: rgb(241, 52, 84);
+    color: white;
+    padding: .5em 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: .5s ease;
+}
+
+a.btn-color:hover,
+.btn-color:hover {
+    background-image: none;
+    background-color: rgb(247, 130, 20);
+    color: white;
+}
+
+footer {
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+/* #region Home */
+
+
+/* #endregion */
+
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    article.banner h2 {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.75em;
+    }
+
+  
+}

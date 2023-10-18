@@ -1,0 +1,121 @@
+/* In a React development, one practice that has become increasingly popular is modularizing CSS stylesheets to only include the stylings for a specific component. This keeps unnecessary code from being loaded into the browser. */
+
+/* In order to implement this stylesheet we must import this file into the Home.js file. */
+
+/* For this example, we will only include the code that applies to the Comparison component. */
+
+/* #region This code could be included in the files that we give the students. */
+/* article.intro {
+    width: 75%;
+    margin: auto;
+    padding: 1em 3em 5em;
+    position: relative;        
+} */
+
+/* article.intro h3 {
+    margin-top: .75em;
+}
+article.intro p {
+    width: 45%;
+    margin: 1.5em 0;
+}
+
+article.intro img {
+    float: right;
+    width: 25em;
+    border-radius: 25px;
+    margin-left: 7em;
+    position: relative;
+} */
+section.home div.text-center {
+    padding: 4em 2em;
+}
+
+section.home img.graphic {
+    width: 75%;
+    border-radius: 25px;
+    border: 3px solid rgb(241, 52, 84)
+}
+
+section.home .home-graphic {
+    background-image: linear-gradient(to top, rgb(241, 52, 84), rgb(247, 130, 20));
+}
+
+article.comparison section h3 {
+    font-family: 'Train One', cursive;
+    font-size: 2em;
+}
+/* #endregion */
+
+/* #region Code to add with students */
+section.home .comparison {
+    background-color: rgb(50,50,50);
+    color: white;
+    padding: 3em 0;
+    text-align: center;
+}
+
+section.home .comparison section {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 4em 1em;
+    margin: 4em auto;
+}
+section.home .comparison h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+section.home .comparison section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+
+section.home .comparison section p {
+    height: 13em;
+}
+section.home .comparison section img {
+    height: 7em;
+    margin-bottom: 2em;
+}
+/* #endregion */
+@media only screen and (max-width: 1220px) {
+
+}
+
+@media only screen and (max-width: 1023px) {
+/* #region Media query - code will be part of codebase students bring in for application. */
+    section.home {
+        text-align: center;
+    }
+
+    section.home article.banner img {
+        width: 200%;
+        margin-left: -50%;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    /* #endregion */
+
+    /* #region Comparision code - Students will add this */
+        .comp-gallery{
+            width: 85%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        section.home .comparison .comp-gallery section {
+            margin: 10px auto;
+            height: unset;
+        }
+
+        section.home div.text-center{
+            padding: 1em;
+        }
+
+        section.home img.graphic {
+            width: 100%;
+        }
+    /* #endregion */
+}

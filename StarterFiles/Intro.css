@@ -1,0 +1,47 @@
+article.component-intro {
+    width: 75%;
+    margin: auto;
+    padding: 0 3em 3em;
+}
+
+article.component-intro div.text{
+    padding: 2em;
+    text-align:center;
+}
+
+article.component-intro div.text p {
+    margin: 2em 0;
+}
+
+article.component-intro img {
+    width: 350px;
+    margin-left: 2em;
+    margin-top: 2.5em;
+    float: right;
+    border-radius: 25px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    article.component-intro {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        padding: 5px 1em;
+    }
+
+    article.component-intro div.text {
+        width: 100%;
+        margin: auto;
+    }
+    article.component-intro img {
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+}

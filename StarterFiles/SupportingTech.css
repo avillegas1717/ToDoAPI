@@ -1,0 +1,49 @@
+/* #region Step 6 - SupportingTech */
+.techGallery {
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .techGallery article.singleTech {
+    display: inline-block;
+    vertical-align: top;
+    width: 40em;
+    height: 20em;
+    margin: 1em 10px;
+    padding: 2em;
+    border: 2px solid rgb(241, 52, 84);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  article.singleTech h2 {
+    font-size: 2em;
+    padding: 10px 0;
+  }
+  
+  article.singleTech p {
+    min-height: 8em;
+  }
+  
+  .singleTech ul {
+    text-align: left;
+    width: 95%;
+    margin: auto;
+  }
+  
+  /* #endregion */
+  
+  @media only screen and (max-width: 1023px) {
+    .techGallery article.singleTech {
+      width: 100%;
+      height: unset;
+    }
+  
+    section.tech article.banner img {
+        width: 150%;      
+    }
+  
+  
+  }
+  

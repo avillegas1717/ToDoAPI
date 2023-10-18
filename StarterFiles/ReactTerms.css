@@ -1,0 +1,70 @@
+/* #region Terms */
+
+.termsGallery {
+    width: 85%;
+    margin: auto;
+    padding: 5em 2em;
+    text-align: center;    
+}
+
+.singleTerm {
+    display: inline-block;
+    padding: 3em 2em;
+    width: 30em;
+    min-height: 15em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #646464;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.singleTerm h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 100%;
+    padding: .5em;
+    background-color: rgb(241, 52, 84);
+    color: rgb(255, 255, 255);
+}
+
+.singleTerm.definition h2 {
+    background-color: rgb(247, 130, 20);
+    color: rgb(50, 50, 50);
+}
+
+.singleTerm.definition button.btn-color {
+    background-color: rgb(247, 130, 20);
+}
+
+.singleTerm.definition button.btn-color:hover {
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+.singleTerm h3 {
+    padding: 1.5em 0;
+}
+
+/* #endregion */
+
+
+
+@media only screen and (max-width: 1023px) {
+section.terms article.banner img {
+    width: 120%;
+    margin-left: -2%;
+}
+  article.termsGallery {
+    width: 95%;
+    padding: 2em 0;
+    min-height: calc(82vh - 15em);
+  }
+
+  article.termsGallery section.singleTerm {
+    width: 100%;
+    margin: 10px auto;
+  }
+}

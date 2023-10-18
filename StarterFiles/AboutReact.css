@@ -1,0 +1,78 @@
+/* #region AboutComponents */
+section.components img {
+    width: 100%;
+}
+
+
+article.components {
+    position: relative;
+}
+
+section.text {
+    text-align: center;
+}
+
+article.components section.text {
+    padding: 3em 2em;
+    border-top: 2px solid rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+article.components:last-child section.text {
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+article.components:nth-child(odd) img {
+    width: 40em;
+    float: right;
+    margin: 2em;
+    border-radius: 10px;
+}
+
+article.components:nth-child(odd) section.text {
+    background-image: linear-gradient(to top right, rgb(241, 52, 84) 50%, rgb(247, 130, 20));
+}
+
+article.components:nth-child(even) img {
+    width: 40em;
+    float: left;
+    margin: 2em;
+    border-radius: 10px;
+}
+
+article.components:nth-child(even) section.text {
+    background-image: linear-gradient(to bottom left, rgb(241, 52, 84) 50%, rgb(247, 130, 20));
+}
+
+section.text div button {
+    margin: 2px;
+}
+
+section.text input.tbUserName {
+    width: 25%;
+    margin: .5em auto;
+    padding: .25em .5em;
+    border-radius: 5px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+
+/* #endregion */
+
+
+@media only screen and (max-width: 1023px) {
+    section.components article.banner img {
+        width: 200%;
+        margin-left: -50%;
+    }    
+
+    article.components:nth-child(odd) img, article.components:nth-child(even) img {
+        width: 100%;
+        margin: 0 0 10px 0;
+        border-radius: 0;
+        float: left;
+    }
+    section.text input.tbUserName {
+        width: 75%;
+    }
+}
